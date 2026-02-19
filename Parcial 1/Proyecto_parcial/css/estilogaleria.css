@@ -1,0 +1,56 @@
+.galeria {
+ width: 95%;
+    max-width: 1400px;
+    margin: 40px auto;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+}
+
+/* Each photo container */
+.galeria-foto {
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+/* Images */
+.galeria-foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+/* Hover effect */
+.galeria-foto:hover img {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+nav {
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(66, 180, 218);
+    margin: auto;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 2vh;
+}
+
+li {
+    font-size: 4vh;
+    color: white;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
