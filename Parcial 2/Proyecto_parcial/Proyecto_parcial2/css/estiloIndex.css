@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: black; 
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 80px; 
+    box-sizing: border-box;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 0 5%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 1000;
+    box-sizing: border-box;
+    border-bottom: 2px solid skyblue; 
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.links {
+    display: flex;
+    gap: 30px;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.links a:hover {
+    color: skyblue;
+}
+
+.logOut {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    width: auto !important; 
+}
+
+
+.contenedor {
+    background-color: black;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px black;
+    width: 100%;
+    max-width: 380px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+h2 {
+    color: skyblue;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    background-color: black;
+    border: 1px solid darkgray;
+    color: white;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input:focus {
+    border-color: skyblue;
+    outline: none;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: skyblue;
+    border: none;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: skyblue;
+}
+
+p {
+    color: lightgray;
+    margin-top: 20px;
+}
+
+span {
+    color: skyblue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.radio-group {
+    text-align: left;
+    margin: 15px 0;
+}
+
+input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+.hidden {
+    display: none;
+}

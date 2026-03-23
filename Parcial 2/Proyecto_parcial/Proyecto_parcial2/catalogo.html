@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estiloCatalogo.css">
+    <title>Catalogo</title>
+    <style>
+
+    </style>
+</head>
+<body>
+
+        <nav>
+        <div class="logo">🎮 GameVault</div>
+        <div class="links">
+            <a href="index.html">Inicio</a>
+            <a href="catalogo.html">Catalogo</a>
+            <a href="perfil.html">Perfil</a>
+        </div>
+
+        <button id="btnLogOut" class="LogOut">Logout</button>
+    </nav>
+
+    <main>
+        <div id="contenedor" class="grid"></div>
+
+        <div id="admin" class="hidden">
+            <div class="acessosAdmin">
+                <h3>Editar Catalogo</h3>
+                <p>Elija un nuevo catalogo para mostrar en la tienda:</p>
+                <input type="file" id="jsonInput" accept=".json" style="display: none;">
+                <button id="importar">Subir Nuevo JSON</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/scriptCatalogo.js"></script>
+</body>
+</html>

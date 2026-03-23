@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="css/estiloIndex.css">
+</head>
+
+<body>
+    
+<nav class="main-nav">
+    <div class="logo">Juego Shop</div> 
+    <div class="links"> 
+        <a href="index.html">Inicio</a>
+        <a href="catalogo.html">Catalogo</a>
+        <a href="perfil.html">Perfil</a>
+    </div>
+    <button class="logOut">Cerrar Sesión</button> 
+</nav>
+
+<div class="contenedor">
+    <div id="login">
+        <h2>Ingresar</h2>
+        <form id="formularioLogin">
+            <input type="email" id="correo" placeholder="Email" required>
+            <!-- Fixed ID: removed space -->
+            <input type="password" id="password" placeholder="Contraseña" required>
+            <button type="submit">Ingresar</button>
+        </form>
+        <p>No tienes cuenta? <span id="alRegistro">Registrate</span></p>
+    </div>
+
+    <div id="registro" class="hidden">
+        <h2>Registro</h2>
+        <!-- Form ID now matches JS -->
+        <form id="formularioRegistro">
+            <input type="text" id="nombre" placeholder="Nombre" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="file" id="imagen" accept="image/*">
+            <input type="password" id="contra" placeholder="Contraseña" required>
+            <input type="password" id="confiContra" placeholder="Confirmar Contraseña" required>
+
+            <div class="admin">
+                <label>Administrador?</label>
+                <!-- Shared name="admin" so only one can be picked -->
+                <input type="radio" name="admin" value="yes"> Yes
+                <input type="radio" name="admin" value="no" checked> No
+            </div>
+
+            <button type="submit">Registrarse</button>
+        </form>
+        <p>Ya tienes cuenta? <span id="alLogin">Ingresar</span></p>
+    </div>
+</div>
+
+<script src="js/scriptIndex.js"></script>
+</body>
+
+</html>

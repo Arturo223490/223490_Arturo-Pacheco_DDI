@@ -1,0 +1,61 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="css/estiloPerfil.css">
+</head>
+
+<body>
+
+    <body>
+
+        <nav>
+            <div class="logo">Juego Shop</div>
+            <div class="links">
+                <a href="index.html">Inicio</a>
+                <a href="catalogo.html">Catalogo</a>
+                <a href="perfil.html">Perfil</a>
+            </div>
+            <button class="logOut">Cerrar Sesión</button>
+        </nav>
+
+        <div class="contenedor">
+            <h2>Tu Perfil</h2>
+            <div class="avatar"><span>No Imagen</span></div>
+
+            <div class="campo">
+                <label>Cambiar Foto:</label>
+                <input type="file" id="foto" accept="image/*">
+            </div>
+
+            <div class="campo">
+                <label>Nombre Completo:</label>
+                <input type="text" id="nombre">
+            </div>
+            <div class="campo">
+                <label>Correo Electrónico:</label>
+                <input type="email" id="correo">
+            </div>
+            <div class="campo">
+                <label>Contraseña:</label>
+                <input type="text" id="pass">
+            </div>
+
+            <div class="campo">
+                <label>Estado de Administrador:</label>
+                <input type="radio" name="admin" id="siAdmin" value="yes"> Yes
+                <input type="radio" name="admin" id="noAdmin" value="no"> No
+            </div>
+
+            <button id="actualizar">Actualizar Perfil</button>
+            <p><a href="index.html" id="logOut">Cerrar Sesión</a></p>
+        </div>
+
+    </body>
+
+    <script src="js/scriptPerfil.js"></script>
+</body>
+
+</html>
