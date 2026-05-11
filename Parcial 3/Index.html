@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas App</title>
+
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="topbar">
+        <h1>Canvas</h1>
+    </header>
+
+
+    <aside class="herramientas">
+
+
+        <div class="grupo">
+
+            <h3>Herramientas</h3>
+
+            <div class="tool-grid">
+
+                <button class="botones" id="btn_pincel">
+                    <i class="fa fa-pencil-alt"></i>
+                </button>
+
+                <button class="botones" id="btn_linea">
+                    <i class="fa fa-slash"></i>
+                </button>
+
+                <button class="botones" id="btn_cuadro">
+                    <i class="fa fa-square"></i>
+                </button>
+
+                <button class="botones" id="btn_circulo">
+                    <i class="fa fa-circle"></i>
+                </button>
+
+                <button class="botones" id="btn_triangulo">
+                    <i class="fa fa-play"></i>
+                </button>
+
+                <button class="botones" id="btn_borrador">
+                    <i class="fa fa-eraser"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="grupo">
+
+            <h3>Colores</h3>
+
+            <label>Relleno</label>
+            <input type="color" id="relleno" value="#ff0000">
+
+            <label>Linea</label>
+            <input type="color" id="linea" value="#000000">
+
+        </div>
+
+
+        <div class="grupo">
+
+            <h3>Grosor</h3>
+
+            <input type="range" id="grozorLinea" min="1" max="50" value="5">
+
+        </div>
+
+
+        <div class="grupo">
+
+            <h3>Filtros</h3>
+
+            <button class="filtro-btn" id="btn_rojo">
+                Rojo
+            </button>
+
+            <button class="filtro-btn" id="btn_verde">
+                Verde
+            </button>
+
+            <button class="filtro-btn" id="btn_azul">
+                Azul
+            </button>
+
+            <button class="filtro-btn" id="btn_negativo">
+                Negativo
+            </button>
+
+        </div>
+
+
+        <div class="grupo">
+
+            <button class="limpiar-btn" id="btn_limpiar">
+                Limpiar Canvas
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <div class="canvas-contenedor">
+
+        <canvas id="canvas" width="1400" height="800"></canvas>
+
+    </div>
+
+    <script type="module" src="js/canvas.js"></script>
+
+</body>
+
+</html>
